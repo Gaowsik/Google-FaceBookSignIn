@@ -1,4 +1,4 @@
-package com.example.loginapp.presentation.signin
+package com.example.loginapp.data.auth
 
 import android.content.Context
 import android.content.Intent
@@ -10,8 +10,11 @@ import com.google.android.gms.auth.api.identity.SignInClient
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import dagger.Provides
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.tasks.await
+
 
 class GoogleAuthUiClient(
     private val context: Context, private val onTapClient: SignInClient
@@ -46,7 +49,7 @@ class GoogleAuthUiClient(
             )
         } catch (e: Exception) {
             e.printStackTrace()
-            if (e is CancellationException) throw e)
+            if (e is CancellationException) throw e
             SignInResult(
                 data = null, errorMessage = e.message
             )

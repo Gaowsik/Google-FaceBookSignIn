@@ -1,4 +1,4 @@
-package com.example.loginapp.presentation.signin
+package com.example.loginapp.data.auth
 
 data class SignInResult(
     val data: UserData?,
