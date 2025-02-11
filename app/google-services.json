@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "462073783275",
+    "project_id": "loginappxiteb",
+    "storage_bucket": "loginappxiteb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462073783275:android:d4d9f48affa1429bda2fae",
+        "android_client_info": {
+          "package_name": "com.example.loginapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2XhCgJW9Lyfvh035zCNjkAFGBP936rIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
