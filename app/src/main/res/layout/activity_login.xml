@@ -7,15 +7,71 @@
     android:layout_height="match_parent"
     tools:context=".presentation.LoginActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/text_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toTopOf="@+id/btn_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SignOut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_user_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <Button
         android:id="@+id/btn_google_signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Google SignIn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btn_fb_signIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="FB SignIn"
+        app:layout_constraintEnd_toEndOf="@+id/btn_google_signIn"
+        app:layout_constraintStart_toStartOf="@+id/btn_google_signIn"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_signIn" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_fb_signIn"
+        app:layout_constraintStart_toStartOf="@+id/btn_fb_signIn"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fb_signIn" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

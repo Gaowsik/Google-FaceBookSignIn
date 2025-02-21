@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.hilt.android)
     implementation(libs.coroutine.play.service)
+    implementation(libs.facebook.android.sdk)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

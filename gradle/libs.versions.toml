@@ -20,6 +20,7 @@ hiltCommon = "1.2.0"
 ksp-version = "1.9.22-1.0.17"
 coroutine-play-service = "1.7.1"
 firebase-auth="23.2.0"
+facebook-sdk="17.0.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,7 @@ play-service-auth = { group = "com.google.android.gms", name = "play-services-au
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth",version.ref="googleServiceAuth" }
 firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx",version.ref="googleServiceAuth" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+facebook-android-sdk= { group = "com.facebook.android", name = "facebook-android-sdk", version.ref = "facebook-sdk" }
 coroutine-play-service = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutine-play-service"}
 
 
